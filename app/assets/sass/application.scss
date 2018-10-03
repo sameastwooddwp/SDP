@@ -1,0 +1,101 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// Import GOV.UK Frontend
+@import "node_modules/govuk-frontend/all";
+
+// Patterns that aren't in Frontend
+@import "patterns/check-your-answers";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
+
+.circle.teal {
+    background-color: #28a197;
+}
+
+.circle.red {
+    background-color: #df3034;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    background-color: #0b0c0c;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.circle {
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #0b0c0c;
+    color: #fff;
+    font-family: "ntatabularnumbers", "nta", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.column-two-thirds {
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.heading-large {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 24px;
+    line-height: 1.04167;
+    margin-top: 1.04167em;
+    margin-bottom: 0.41667em;
+}
+
+.data-item {
+    display: block;
+    line-height: 1;
+}
+
+.bold-xxlarge {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 53px;
+    line-height: 1.03774;
+}
+
+.bold-xsmall {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1.14286;
+}
+
+hr {
+    background: #bfc1c3;
+}
+
+hr {
+    display: block;
+    background: #bfc1c3;
+    border: 0;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
