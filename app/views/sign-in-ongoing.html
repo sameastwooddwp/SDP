@@ -14,44 +14,51 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+
+
       <fieldset class="govuk-fieldset">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
           <h1 class="govuk-fieldset__heading">
-            Enter claimant details
+            Sign in
           </h1>
         </legend>
 
-<form class="form" action="claimant-info" method="post">
 
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="address-town">
-      Full name
-    </label>
-    <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
-  </div>
-
+<form class="form" action="tasks-ongoing" method="post">
         <div class="govuk-form-group">
           <label class="govuk-label" for="address-town">
-            National Insurance number
+            User ID
           </label>
-          <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
+          <input class="govuk-input govuk-input--width-10" id="address-town" name="address-town" type="text">
         </div>
 
         <div class="govuk-form-group">
-          <label class="govuk-label" for="address-postcode">
-            Current award length
+          <label class="govuk-label" for="address-county">
+            Password
           </label>
           <input class="govuk-input govuk-input--width-10" id="address-county" name="address-county" type="text">
         </div>
 
-
         <button type="submit" class="govuk-button">
-          Continue
+          Sign in
         </button>
   </form>
+
+
       </fieldset>
 
-
+<h4 class="govuk-heading-s">Problems signing in</h4>
+      <ul class="govuk-list">
+  <li>
+    <a class="govuk-link" href="#">Forgotten password</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#">Forgotten user ID</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#">Need to create an account</a>
+  </li>
+</ul>
     </div>
   </div>
 

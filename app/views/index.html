@@ -1,67 +1,29 @@
+
 {% extends "layout.html" %}
 
-{% block header %}
-  {# Set serviceName in config.js. #}
-  {{ govukHeader({
-    serviceName: serviceName,
-    serviceUrl: "/",
-    containerClasses: "govuk-width-container"
-  }) }}
+{% block pageTitle %}
+  GOV.UK Prototype Kit
 {% endblock %}
 
 {% block content %}
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Pay SDP
+        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        There are two versions of this prototype, one just for ongoing payment processing, and one also including the initial process for calculating and paying a lump sum.</p>
 
+      <h2 class="govuk-heading-m">Versions</h2>
 
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="sign-in-ongoing.html">Ongoing payments</a></li>
+        <li>Lump sum and ongoing payments</li>
+      </ul>
 
-      <fieldset class="govuk-fieldset">
-        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-          <h1 class="govuk-fieldset__heading">
-            Sign in
-          </h1>
-        </legend>
-
-
-<form class="form" action="details" method="post">
-        <div class="govuk-form-group">
-          <label class="govuk-label" for="address-town">
-            User ID
-          </label>
-          <input class="govuk-input govuk-input--width-10" id="address-town" name="address-town" type="text">
-        </div>
-
-        <div class="govuk-form-group">
-          <label class="govuk-label" for="address-county">
-            Password
-          </label>
-          <input class="govuk-input govuk-input--width-10" id="address-county" name="address-county" type="text">
-        </div>
-
-        <button type="submit" class="govuk-button">
-          Sign in
-        </button>
-  </form>
-
-
-      </fieldset>
-
-<h4 class="govuk-heading-s">Problems signing in</h4>
-      <ul class="govuk-list">
-  <li>
-    <a class="govuk-link" href="#">Forgotten password</a>
-  </li>
-  <li>
-    <a class="govuk-link" href="#">Forgotten user ID</a>
-  </li>
-  <li>
-    <a class="govuk-link" href="#">Need to create an account</a>
-  </li>
-</ul>
     </div>
-  </div>
-
-
+</div>
 
 {% endblock %}
