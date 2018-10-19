@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  {# Set serviceName in config.js. #}
+  {{ govukHeader({
+    serviceName: serviceName,
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<a href="work-list" class="govuk-back-link">Back</a>
+
+<div class="case-header">
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-0">
+    <span class="govuk-caption-l">Claimant details</span>
+    QQ123456
+
+  </h1>
+
+  <table class="govuk-table" border="0">
+    <tr class="govuk-table__row">
+        <td width="39%" class="govuk-table__cell"><strong class="govuk-tag">
+  carers element confirmation required
+</strong></td>
+      </tr>
+  </table>
+
+  <a href="" role="button" class="govuk-button govuk-button--secondary govuk-button--small">
+    Log call
+  </a>
+  <a href="" role="button" class="govuk-button govuk-button--secondary govuk-button--small">
+    Confirm carers element
+  </a>
+  <div class="grid-row">
+
+      <div class="column-two-thirds">
+        <div class="timeline">
+
+          <span class="line"></span>
+          <div class="timeline__event">
+            <h3 class="govuk-heading-m">Call logged</h3>
+            <span class="govuk-caption-m">20 October 2018</span>
+            <p class="bold-xsmall">John Goldsmith</p>
+            <p class="font-xsmall">Number called 07998 124323. No answer.</p>
+          </div>
+
+          <span class="line"></span>
+          <div class="timeline__event">
+            <h3 class="govuk-heading-m">Call logged</h3>
+            <span class="govuk-caption-m">15 October 2018</span>
+            <p class="bold-xsmall">John Goldsmith</p>
+            <p class="font-xsmall">Number called 07998 124323. No answer.</p>
+          </div>
+
+
+
+          <div style="clear:both"></div>
+
+        </div><!-- timeline -->
+
+      </div><!-- column -->
+
+      <div class="column-one-third">
+
+      </div><!-- column -->
+
+    </div>
+
+
+
+{% endblock %}
