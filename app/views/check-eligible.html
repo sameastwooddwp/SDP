@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  {# Set serviceName in config.js. #}
+  {{ govukHeader({
+    serviceName: serviceName,
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<a href="claimant-info-3" class="govuk-back-link">Back</a>
+
+  <div class="govuk-width-container">
+
+<main class="govuk-main-wrapper">
+<div class="case-header">
+
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-0">
+    <span class="govuk-caption-l">Claimant details</span>
+    QQ123456
+  </h1>
+<strong class="govuk-tag">confirm eligibility</strong>
+<hr>
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        Is the claimants UC claim live?
+      </h1>
+    </legend>
+
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name-1">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          No
+        </label>
+
+      </div>
+    </div>
+    <p class="govuk-body govuk-!-margin-top-3"></p>
+    <button type="submit" class="govuk-button">
+      Continue
+    </button>
+
+
+  </fieldset>
+</div>
+
+      </div>
+
+    </main>
+  </div>
+
+
+
+{% endblock %}

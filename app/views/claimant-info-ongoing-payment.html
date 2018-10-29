@@ -1,0 +1,168 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  {# Set serviceName in config.js. #}
+  {{ govukHeader({
+    serviceName: serviceName,
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<a href="work-list" class="govuk-back-link">Back</a>
+
+  <div class="govuk-width-container">
+
+<main class="govuk-main-wrapper">
+<div class="case-header">
+
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-0">
+    <span class="govuk-caption-l">Claimant details</span>
+    QQ123456
+  </h1>
+  <strong class="govuk-tag">payment raised</strong>
+
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+  <hr>
+          <h3 class="govuk-heading-m">Last account activity</h3>
+
+          <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-one-quarter">
+                    <span class="bold-xxlarge">£2,160</span>
+                    <span class="data-item bold-xsmall">payment raised</span>
+                  </div>
+            </div>
+
+
+            <p class="govuk-body govuk-!-margin-top-8"></p>
+
+            <div class="govuk-tabs" data-module="tabs">
+              <h2 class="govuk-tabs__title">
+                Contents
+              </h2>
+
+              <ul class="govuk-tabs__list">
+                <li class="govuk-tabs__list-item">
+                  <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#past-day">
+                    Timeline
+                  </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                  <a class="govuk-tabs__tab" href="#past-week">
+                    Lump sum payment
+                  </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                  <a class="govuk-tabs__tab" href="#past-month">
+                    On-going payments
+                  </a>
+                </li>
+              </ul>
+
+              <section class="govuk-tabs__panel" id="past-day">
+                <h2 class="govuk-heading-l">Timeline</h2>
+                <div class="timeline">
+
+                  <span class="line"></span>
+                  <div class="timeline__event">
+                    <h3 class="govuk-heading-m">On-going payment made</h3>
+                    <span class="govuk-caption-m">3 September 2018</span>
+                    <p class="bold-xsmall">John Goldsmith</p>
+                    <p class="font-xsmall">On-going payment made of £109.80 made on 3 September 2018.</p>
+                  </div>
+
+                  <span class="line"></span>
+                  <div class="timeline__event">
+                    <h3 class="govuk-heading-m">On-going payment made</h3>
+                    <span class="govuk-caption-m">3 August 2018</span>
+                    <p class="bold-xsmall">John Goldsmith</p>
+                    <p class="font-xsmall">On-going payment made of £109.80 made on 3 August 2018.</p>
+                  </div>
+
+                  <span class="line"></span>
+                  <div class="timeline__event">
+                    <h3 class="govuk-heading-m">Lump sum payment made</h3>
+                    <span class="govuk-caption-m">3 July 2018</span>
+                    <p class="bold-xsmall">John Goldsmith</p>
+                    <p class="font-xsmall">Lump sum payment made on 4 July 2018</p>
+                  </div>
+
+
+
+                  <div style="clear:both"></div>
+
+                </div>
+
+              </section>
+              <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+                <h2 class="govuk-heading-l">Lump sum payment</h2>
+            <p class="govuk-body">A lump sum payment of £7,000 was made on 30 October 2018</p>
+                  </tbody>
+                </table>
+
+              </section>
+              <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+                <h2 class="govuk-heading-l">On-going payments</h2>
+
+                <table class="govuk-table">
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="col">Date</th>
+                      <th class="govuk-table__header" scope="col">Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">3 October 2018</th>
+                      <td class="govuk-table__cell">£109.80</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">3 September 2018</th>
+                      <td class="govuk-table__cell">£109.80</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">3 August 2018</th>
+                      <td class="govuk-table__cell">£109.80</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+              </section>
+            </div>
+        </div>
+
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body govuk-!-margin-top-6"></p>
+            <div class="app-related-items">
+  <h2 class="govuk-heading-s">
+    Account actions
+  </h2>
+  <ul class="govuk-list govuk-body-s">
+
+    <ul class="govuk-list govuk-body-s">
+        <li><a href="/contact" class="govuk-link">Log a query</a></li>
+        <li><a href="work-list" class="govuk-link">View work list</a></li>
+    </ul>
+
+
+  </ul>
+</div>
+
+</ul>
+
+
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+
+
+{% endblock %}
