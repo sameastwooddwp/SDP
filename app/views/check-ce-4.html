@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  {# Set serviceName in config.js. #}
+  {{ govukHeader({
+    serviceName: serviceName,
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            Carers element confirmed
+          </h1>
+          <div class="govuk-panel__body">
+            Your reference number
+            <br><strong>HDJ2123F</strong>
+          </div>
+        </div>
+
+
+        <h3 class="govuk-heading-m">What happens next</h3>
+
+        <p class="govuk-body">
+          This claimant is eligible for a lump sum award.
+        <p class="govuk-body">
+          You will now need to check eligibility and raise a payment request.
+        </p>
+        </p>
+
+        <p class="govuk-body">
+          <a href="check-eligible-hub" class="govuk-link">Back to claimant information</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}

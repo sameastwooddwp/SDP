@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  {# Set serviceName in config.js. #}
+  {{ govukHeader({
+    serviceName: serviceName,
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<a href="raise-payment-hub" class="govuk-back-link">Back</a>
+
+  <div class="govuk-width-container">
+
+<main class="govuk-main-wrapper">
+<div class="case-header">
+
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-0">
+    <span class="govuk-caption-l">Claimant details</span>
+    QQ123456
+  </h1>
+<strong class="govuk-tag">raise payment</strong>
+<hr>
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    <h2 class="govuk-fieldset__heading">
+      SDP calculation
+    </h2>
+  </legend>
+
+<p class="govuk-body govuk-!-margin-top-2"></p>
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Rate</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">First claim date</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">AP since claim date</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">£80</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">1 August 2016</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">27</td>
+    </tr>
+  </tbody>
+</table>
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-quarter">
+          <span class="bold-xxlarge">£2,160</span>
+          <span class="data-item bold-xsmall">Total lump sum payment due</span>
+        </div>
+  </div>
+</div>
+<a href="raise-payment-2" id="nextpagelink">
+  <button class="govuk-button">Continue</button>
+</a>
+      </div>
+
+    </main>
+  </div>
+
+  <script type="text/javascript">
+  function routeYes() {
+    document.getElementById("nextpagelink").href="check-ce-3.html";
+  };
+  function routeNo() {
+    document.getElementById("nextpagelink").href="#";
+  };
+  </script>
+
+{% endblock %}

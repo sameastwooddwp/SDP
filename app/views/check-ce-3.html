@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  {# Set serviceName in config.js. #}
+  {{ govukHeader({
+    serviceName: serviceName,
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<a href="check-ce-2" class="govuk-back-link">Back</a>
+
+  <div class="govuk-width-container">
+
+<main class="govuk-main-wrapper">
+<div class="case-header">
+
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-0">
+    <span class="govuk-caption-l">Claimant details</span>
+    QQ123456
+  </h1>
+<strong class="govuk-tag">contact claimant</strong>
+<hr>
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    <h2 class="govuk-fieldset__heading">
+      What supporting evidence has the claimant provided?
+    </h2>
+  </legend>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+
+    <span id="waste-hint" class="govuk-hint">
+      Select all that apply.
+    </span>
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+          Item 1
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+        Item 2
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+          Item 3
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
+
+  </fieldset>
+</div>
+
+<a href="check-ce-4" id="nextpagelink">
+  <button class="govuk-button">Continue</button>
+</a>
+
+</form>
+</div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <script type="text/javascript">
+  function routeYes() {
+    document.getElementById("nextpagelink").href="check-ce-3.html";
+  };
+  function routeNo() {
+    document.getElementById("nextpagelink").href="#";
+  };
+  </script>
+
+{% endblock %}

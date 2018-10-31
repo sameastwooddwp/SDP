@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-<a href="claimant-info-check-eligible" class="govuk-back-link">Back</a>
+<a href="check-ce-hub" class="govuk-back-link">Back</a>
 
   <div class="govuk-width-container">
 
@@ -21,7 +21,7 @@
     <span class="govuk-caption-l">Claimant details</span>
     QQ123456
   </h1>
-<strong class="govuk-tag">confirm eligibility</strong>
+<strong class="govuk-tag">contact claimant</strong>
 <hr>
 
 
@@ -29,9 +29,13 @@
   <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
     <h2 class="govuk-fieldset__heading">
-      Is the claimants UC claim live?
+      Find the claimant in UCFS
     </h2>
   </legend>
+
+    <p class="govuk-body">Use their preferred phone number and ask if they have a carer with carers elelemt.</p>
+    <h4 class="govuk-heading-s">Did you manage the speak to the claimant?</h4>
+
   <div class="govuk-radios govuk-radios--inline">
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="claim-live-yes" name="claim-live" type="radio" value="true" onclick="routeYes();">
@@ -63,10 +67,10 @@
 
   <script type="text/javascript">
   function routeYes() {
-    document.getElementById("nextpagelink").href="claim-live-yes.html";
+    document.getElementById("nextpagelink").href="check-ce-2.html";
   };
   function routeNo() {
-    document.getElementById("nextpagelink").href="claim-live-no.html";
+    document.getElementById("nextpagelink").href="#";
   };
   </script>
 
