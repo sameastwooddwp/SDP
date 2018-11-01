@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  {# Set serviceName in config.js. #}
+  {{ govukHeader({
+    serviceName: serviceName,
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            <br>Letter generated
+          </h1>
+          <div class="govuk-panel__body">
+
+
+          </div>
+        </div>
+
+<p class="govuk-body">The letter has been downloaded to your 'downloads' folder.</p>
+        <h3 class="govuk-heading-m">What happens next?</h3>
+
+        <p class="govuk-body">
+          Add this text to the journal and upload the letter.
+        </p>
+
+
+        <div class="app-tabs__container js-tabs__container app-tabs__container--with-close-button" id="example-default-html" role="tabpanel" aria-hidden="false">
+          <button onclick="myFunction()" class="app-copy-button js-copy-button" aria-live="assertive">Copy</button>
+            <pre data-module="app-copy">
+              <p class="container">
+      Your SDP payment for £2,160 was made on the 1 September 2018.</p>
+            </pre>
+      </div>
+          <br>
+          <p class="govuk-body">
+          <a href="ongoing-payment-hub" class="govuk-link">Back to claimant information</a>
+        </p>
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}

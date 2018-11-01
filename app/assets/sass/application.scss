@@ -173,6 +173,16 @@ hr {
     color: #6F777B;
 }
 
+.copy__info {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 100;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    color: #6F777B;
+}
+
 .timeline_datetime {
     color: #6f777b;
     margin-top: 0px;
@@ -196,5 +206,58 @@ hr {
     text-decoration: none;
 }
 
+.app-tabs__container {
+    position: relative;
+    margin-top: -2px;
+    border: 1px solid #bfc1c3;
+    background-color: #F8F8F8;
+}
 
+.app-copy-button {
+    font-family: "nta",Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 1.14286;
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    right: 15px;
+    min-width: 80px;
+    padding: 4px 10px 0;
+    border: 1px solid #00823b;
+    color: #00823b;
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.app-example-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "nta",Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+.app-tabs__heading--current {
+    background-color: #f0f0f0;
+}
+
+.app-content pre, .app-content code {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+.app-tabs__container pre {
+  font-size: 12px;
+      font-family: "nta",Arial,sans-serif;
+}
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you

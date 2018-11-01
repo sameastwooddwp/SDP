@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  {# Set serviceName in config.js. #}
+  {{ govukHeader({
+    serviceName: serviceName,
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+          <h1 class="govuk-panel__title">
+            <br>Eligiblity checked
+          </h1>
+          <div class="govuk-panel__body">
+
+          </div>
+        </div>
+
+
+        <h3 class="govuk-heading-m">What happens next</h3>
+
+        <p class="govuk-body">
+          The claimant is eligible for an ongoing payment.
+        <p class="govuk-body">
+          You will now need to raise a payment request.
+        </p>
+        </p>
+
+        <p class="govuk-body">
+          <a href="ongoing-raise-payment-hub" class="govuk-link">Back to claimant information</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}

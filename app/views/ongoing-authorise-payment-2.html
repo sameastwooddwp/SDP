@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-<a href="raise-payment-1" class="govuk-back-link">Back</a>
+<a href="ongoing-authorise-payment-1" class="govuk-back-link">Back</a>
 
   <div class="govuk-width-container">
 
@@ -21,7 +21,7 @@
     <span class="govuk-caption-l">Claimant details</span>
     QQ123456
   </h1>
-<strong class="govuk-tag">raise payment</strong>
+<strong class="govuk-tag">authorise payment</strong>
 <hr>
 
 
@@ -29,21 +29,20 @@
   <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
     <h2 class="govuk-fieldset__heading">
-      Raise a payment in CPS
+      Enter the CPS reference number
     </h2>
   </legend>
 
 <p class="govuk-body govuk-!-margin-top-2"></p>
 
-<p class="govuk-body">To pay the claimant £2,160 you'll need:</p>
+<div class="govuk-form-group">
 
-<ul class="govuk-list govuk-list--bullet">
-  <li>The claimants bank details from ???</li>
-  <li>The name of your CPS authoriser</li>
-</ul>
+  <input class="govuk-input govuk-input--width-10" id="national-insurance-number" name="national-insurance-number" type="text" aria-describedby="national-insurance-number-hint">
+</div>
 
-<a href="raise-payment-3" id="nextpagelink">
-  <button class="govuk-button">Record payment request</button>
+</div>
+<a href="ongoing-authorise-payment-3" id="nextpagelink">
+<button class="govuk-button">Record payment authorisation</button>
 </a>
       </div>
 

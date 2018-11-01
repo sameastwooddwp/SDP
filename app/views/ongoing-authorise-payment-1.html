@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-<a href="authorise-payment-hub" class="govuk-back-link">Back</a>
+<a href="ongoing-authorise-payment-hub" class="govuk-back-link">Back</a>
 
   <div class="govuk-width-container">
 
@@ -29,7 +29,7 @@
   <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
     <h2 class="govuk-fieldset__heading">
-      Authorise payment
+      Authorise ongoing payment
     </h2>
   </legend>
 
@@ -56,16 +56,16 @@
       <td class="govuk-table__cell">LCWRA</td>
     </tr>
     <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">AP since first claim date</th>
-      <td class="govuk-table__cell">27</td>
+      <th class="govuk-table__header" scope="row">AP date</th>
+      <td class="govuk-table__cell">1 September 2018</td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Rate</th>
       <td class="govuk-table__cell">£80</td>
     </tr>
     <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Lump sum</th>
-      <td class="govuk-table__cell">£2,160</td>
+      <th class="govuk-table__header" scope="row">Ongoing payment due</th>
+      <td class="govuk-table__cell">£80</td>
     </tr>
   </tbody>
 </table>
@@ -102,7 +102,7 @@
 
   <script type="text/javascript">
   function routeYes() {
-    document.getElementById("nextpagelink").href="authorise-payment-2.html";
+    document.getElementById("nextpagelink").href="ongoing-authorise-payment-2.html";
   };
   function routeNo() {
     document.getElementById("nextpagelink").href="#";

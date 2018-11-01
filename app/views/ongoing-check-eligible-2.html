@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-<a href="check-eligible-1" class="govuk-back-link">Back</a>
+<a href="ongoing-check-eligible-1" class="govuk-back-link">Back</a>
 
   <div class="govuk-width-container">
 
@@ -29,7 +29,7 @@
   <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
     <h2 class="govuk-fieldset__heading">
-      Is the claimant in LCWRA group?
+      Has the claimant joined or left a couple?
     </h2>
   </legend>
   <div class="govuk-radios govuk-radios--inline">
@@ -63,10 +63,10 @@
 
   <script type="text/javascript">
   function routeYes() {
-    document.getElementById("nextpagelink").href="check-eligible-4";
+    document.getElementById("nextpagelink").href="#";
   };
   function routeNo() {
-    document.getElementById("nextpagelink").href="check-eligible-4";
+    document.getElementById("nextpagelink").href="ongoing-check-eligible-3";
   };
   </script>
 
