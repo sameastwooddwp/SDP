@@ -1,15 +1,12 @@
 {% extends "layout.html" %}
 
 {% block header %}
-  {# Set serviceName in config.js. #}
-  {{ govukHeader({
-    serviceName: serviceName,
-    serviceUrl: "/",
-    containerClasses: "govuk-width-container"
-  }) }}
+
 {% endblock %}
 
 {% block content %}
+
+
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
     <div class="govuk-grid-row">
@@ -36,7 +33,7 @@
           <pre data-module="app-copy">
             <p class="container">
       You are not eligible for a lump sum SDP payment.
-      Please read the attached letter for full details. 
+      Please read the attached letter for full details.
           </p>
           </pre>
 
