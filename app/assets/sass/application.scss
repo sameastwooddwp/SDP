@@ -289,6 +289,23 @@ hr {
     margin-right: 10px;
 }
 
+.badge.warning {
+    background: #005ea5;
+}
+
+.badge {
+    background-color: #005ea5;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1em;
+    padding: 7px 7px 5px 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin-bottom: 2px;
+}
 
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
