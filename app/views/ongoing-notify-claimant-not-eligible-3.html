@@ -26,23 +26,35 @@
           Copy and paste this text to the journal and upload the notification.
         </p>
 
-        <div class="app-tabs__container js-tabs__container app-tabs__container--with-close-button" id="example-default-html" role="tabpanel" aria-hidden="false">
-          <button class="app-copy-button js-copy-button" aria-live="assertive">Copy</button>
-          <pre data-module="app-copy">
-            <p class="container">
-      You are not eligible for additional Universal Credit payments.
-      Please read the attached letter for full details.
-          </p>
-          </pre>
 
-      </div>
-          <br>
-          <p class="govuk-body">
-          <a href="ongoing-claimant-not-eligible-hub" class="govuk-link">Back to claimant information</a>
-        </p>
-    </div>
-  </main>
-</div>
+
+                <div class="app-tabs__container js-tabs__container app-tabs__container--with-close-button" id="example-default-html" role="tabpanel" aria-hidden="false">
+                  <button id="copyButton" onclick="copyGeneratedContent()" class="app-copy-button js-copy-button" aria-live="assertive">Copy</button>
+                  <textarea id="genText" rows="4" cols="70" style="resize:none;" class="textarea">
+
+                    You are not eligible for additional Universal Credit payments.
+                    Please read the attached letter for full details.
+                  </textarea>
+                </pre>
+              </div>
+                  <br>
+                  <p class="govuk-body">
+                  <a href="ongoing-claimant-not-eligible-hub" class="govuk-link">Back to claimant information</a>
+                </p>
+            </div>
+          </main>
+        </div>
+
+
+<script>
+  function copyGeneratedContent() {
+    var copyText = document.getElementById("genText");
+    var copyBtn = document.getElementById("copyButton");
+    copyText.select();
+    document.execCommand("copy");
+    copyBtn.textContent = "Copied!";
+  }
+</script>
 
 
 {% endblock %}

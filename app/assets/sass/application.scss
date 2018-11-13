@@ -276,6 +276,18 @@ hr {
 
 }
 
+.pager {
+    margin-top: .3125em;
+    margin-bottom: 1.25em;
+}
+
+.pager-items {
+    display: none;
+}
+
+.pager-prev, .pager-next {
+    margin-right: 10px;
+}
 
 
 
