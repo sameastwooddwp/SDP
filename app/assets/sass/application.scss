@@ -307,5 +307,25 @@ hr {
     margin-bottom: 2px;
 }
 
+.claimantID {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 800;
+    text-transform: none;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+.claimantID:visited {
+  color: #000;
+}
+
+.active, .claimantID:hover {
+  color: #000000;
+  text-decoration: underline;;
+}
+
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
