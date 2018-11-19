@@ -7,6 +7,7 @@
 {% block content %}
 
 
+
   <div class="govuk-width-container">
 
 <main class="govuk-main-wrapper">
@@ -16,21 +17,31 @@
     <span class="govuk-caption-l">Claimant details</span>
     QQ123456
   </h1>
-<strong class="govuk-tag">check eligibility - monthly payment</strong>
-
+<strong class="govuk-tag">single payment made</strong>
 
 
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
   <hr>
 
-      <h3 class="govuk-heading-l">Check eligibility</h3>
+<!--<h3 class="govuk-heading-s">Last payment activity</h3>
 
-      <p class="govuk-body">An authoriser reported the rate given was wrong.</p>
-      <p class="govuk-body">You need to make the eligibility checks again and raise another payment.</p>
+  <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-quarter">
+            <span class="bold-xxlarge">£80</span>
+            <span class="data-item bold-xsmall">Ongoing payment</span>
+            <span class="govuk-body govuk-!-font-size-14">14 October 2018</span>
+          </div>
+    </div>
 
-      <a href="ongoing-check-eligible-1"><button type="submit" class="govuk-button">
-        Make checks
+  <hr> -->
+
+          <h3 class="govuk-heading-l">Single payment made</h3>
+
+      <p class="govuk-body">Eligibility and rate checks will need to be performed again on 26 November 2018 to see if the claimant is due a monthly payment.</p>
+
+      <a href="work-list"><button type="submit" class="govuk-button">
+        View another claimant
       </button></a>
 
 
@@ -51,8 +62,9 @@
     Account actions
   </h2>
   <ul class="govuk-list govuk-body-s">
-      <li><a href="raise-payment-checked-history" class="govuk-link">Decision history</a></li>
+      <li><a href="ongoing-payment-first-payment-notified-history" class="govuk-link">Decision history</a></li>
       <li><a href="work-list" class="govuk-link">View work list</a></li>
+      <li><a href="ongoing-payment-complete-history" class="govuk-link">View payment history</a></li>
   </ul>
 
   <p class="govuk-body govuk-!-margin-top-6"></p>
@@ -61,11 +73,20 @@
 
     <span class="line"></span>
     <div class="timeline__event">
-      <span class="timeline__title">Payment authorisation rejected</span>
-      <p class="timeline__date">26 September 2018</p>
-      <span class="govuk-body govuk-!-font-size-14">John Goldsmith</span>
+      <span class="timeline__title">Claimant notified of single payment</span>
+      <p class="timeline__date">9 October 2018</p>
+      <span class="govuk-body govuk-!-font-size-14">Simon Johnson</span>
       <p class="govuk-body govuk-!-margin-top-2"></p>
-      <p class="govuk-body-s">Incorrect rate</p>
+      </p>
+    </div>
+
+    <span class="line"></span>
+    <div class="timeline__event">
+      <span class="timeline__title">Payment authorised</span>
+      <p class="timeline__date">5 October 2018</p>
+      <span class="govuk-body govuk-!-font-size-14">Simon Johnson</span>
+      <p class="govuk-body govuk-!-margin-top-2"></p>
+        <p class="govuk-body-s">CPS ref: C123D4TF</p>
       </p>
     </div>
 
@@ -95,7 +116,7 @@
       <p class="timeline__date">3 September 2018</p>
       <span class="govuk-body govuk-!-font-size-14">John Goldsmith</span>
       <p class="govuk-body govuk-!-margin-top-2"></p>
-      <p class="govuk-body-s">Confirmed no carers element.</p>
+      <p class="govuk-body-s">Confirmed no carer element.</p>
     </div>
 
 

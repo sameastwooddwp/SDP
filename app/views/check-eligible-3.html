@@ -18,33 +18,65 @@
     <span class="govuk-caption-l">Claimant details</span>
     QQ123456
   </h1>
-<strong class="govuk-tag">check eligibility</strong>
+<strong class="govuk-tag">check eligibility for single payment</strong>
 <hr>
-
 
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
     <h2 class="govuk-fieldset__heading">
-      Is the claimant in LCWRA group?
+      Which Universal Credit work group is the claimant in?
     </h2>
   </legend>
-  <div class="govuk-radios govuk-radios--inline">
+  <div class="govuk-radios">
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="claim-live-yes" name="claim-live" type="radio" value="true" onclick="routeYes();">
       <label class="govuk-label govuk-radios__label" for="claim-live-yes">
-        Yes
+        Intensive work search
+      </label>
+    </div>
+
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="claim-live-no" name="claim-live" type="radio" value="false" onclick="routeNo();">
+      <label class="govuk-label govuk-radios__label" for="claim-live-no">
+        Light touch - in work
       </label>
     </div>
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="claim-live-no" name="claim-live" type="radio" value="false" onclick="routeNo();">
       <label class="govuk-label govuk-radios__label" for="claim-live-no">
-        No
+        Light touch - out of work
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="claim-live-no" name="claim-live" type="radio" value="false" onclick="routeNo();">
+      <label class="govuk-label govuk-radios__label" for="claim-live-no">
+        Work preparation
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="claim-live-no" name="claim-live" type="radio" value="false" onclick="routeNo();">
+      <label class="govuk-label govuk-radios__label" for="claim-live-no">
+        Work focused interview
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="claim-live-no" name="claim-live" type="radio" value="false" onclick="routeNo();">
+      <label class="govuk-label govuk-radios__label" for="claim-live-no">
+        Working enough - no work related requirements
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="claim-live-no" name="claim-live" type="radio" value="false" onclick="routeNo();">
+      <label class="govuk-label govuk-radios__label" for="claim-live-no">
+        No work related requirements
       </label>
     </div>
   </div>
   </fieldset>
 </div>
+
+
 
 <a href="#" id="nextpagelink">
   <button class="govuk-button">Continue</button>
